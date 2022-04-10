@@ -38,7 +38,7 @@ function App() {
   return (
     <div className="App">
       <form onSubmit={handleSubmit}>
-        <h1>{translatedText}</h1>
+        {!error && <h1>{translatedText}</h1>}
         {error && (
           <small
             style={{
